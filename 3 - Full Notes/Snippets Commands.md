@@ -1,0 +1,1 @@
+[Image Adjustments](https://publish.obsidian.md/slrvb-docs/ITS+Theme/Image+Adjustments#Image+Adjustments)

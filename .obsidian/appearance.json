@@ -1,3 +1,9 @@
 {
-  "showRibbon": true
+  "showRibbon": true,
+  "theme": "obsidian",
+  "cssTheme": "Vanilla AMOLED",
+  "enabledCssSnippets": [
+    "S - Images Adjustments",
+    "S - Checkboxes"
+  ]
 }

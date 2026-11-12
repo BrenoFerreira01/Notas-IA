@@ -1,4 +1,5 @@
-data: 2026.11.12
+
+data: 12.11.2026
 horário: 16:18
 Tags: [[DevOps]]
 
@@ -32,14 +33,14 @@ Tags: [[DevOps]]
 
 Construir em grupo um projeto prático de DevOps que integre os conceitos, as ferramentas e as práticas estudadas. O trabalho será avaliado pelo funcionamento prático e pela explicação técnica. Os grupos podem ter até 5 alunos. Criatividade, como uma aplicação própria, dashboards ou automações extras, pode render até 0,5 ponto extra.
 
-| Etapa | Pontos |
-| --- | ---: |
-| 1. Conceitos fundamentais de DevOps | 1,5 |
-| 2. Integração contínua e entrega contínua | 2,0 |
-| 3. Continuous Deployment e orquestração | 2,5 |
-| 4. Logging e métricas | 2,0 |
-| 5. Relatório final e apresentação | 2,0 |
-| **Total** | **10,0** |
+| Etapa                                     |   Pontos |
+| ----------------------------------------- | -------: |
+| 1. Conceitos fundamentais de DevOps       |      1,5 |
+| 2. Integração contínua e entrega contínua |      2,0 |
+| 3. Continuous Deployment e orquestração   |      2,5 |
+| 4. Logging e métricas                     |      2,0 |
+| 5. Relatório final e apresentação         |      2,0 |
+| **Total**                                 | **10,0** |
 
 ### Etapa 1 - Conceitos fundamentais de DevOps (1,5 pontos)
 

@@ -1,0 +1,687 @@
+/*----Image Positions/Adjustments----*/
+body {
+  --micro: 70px;
+  --tiny: 100px;
+  --small: 200px;
+  --small-med: 300px;
+  --med-small: 400px;
+  --medium: 500px;
+  --med-tall: 600px;
+  --tall: 700px;
+}
+
+.popover.hover-popover {
+  --micro: 70px;
+  --tiny: 100px;
+  --small: 150px;
+  --small-med: 200px;
+  --med-small: 250px;
+  --medium: 300px;
+  --med-tall: 450px;
+  --tall: 500px;
+}
+
+/*----Mobile----*/
+@media (max-width: 500px) {
+  .theme-dark, .theme-light {
+    /*Mobile Sizes*/
+    --radius: 0px;
+    --micro: 70px;
+    --tiny: 100px;
+    --small: 150px;
+    --small-med: 200px;
+    --med-small: 250px;
+    --medium: 300px;
+    --med-tall: 450px;
+    --tall: 500px;
+  }
+}
+/*-Image Sizing-*/
+/*Fit image within bounds WITHOUT stretching*/
+img:is([alt*=cover], [alt*=cvr]),
+.image-embed:is([src*="#cover"], [src*="#cvr"]),
+span.image-embed:is([src*="#cover"], [src*="#cvr"]) img {
+  object-fit: cover;
+}
+
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative]):is([alt*=wmicro],
+[alt*=wtiny],
+[alt*=wsmall],
+[alt*=ws-med],
+[alt*=wm-sm],
+[alt*=wmed],
+[alt*=wm-tl],
+[alt*=wtall],
+[alt*=wfull]) {
+  width: var(--image-adj-size-w);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative]):is([alt*=hmicro],
+[alt*=htiny],
+[alt*=hsmall],
+[alt*=hs-med],
+[alt*=hm-sm],
+[alt*=hmed],
+[alt*=hm-tl],
+[alt*=htall],
+[alt*=hfull]) {
+  height: var(--image-adj-size-h);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=hmicro] {
+  --image-adj-size-h: var(--micro);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=htiny] {
+  --image-adj-size-h: var(--tiny);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=hsmall] {
+  --image-adj-size-h: var(--small);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=hs-med] {
+  --image-adj-size-h: var(--small-med);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=hm-sm] {
+  --image-adj-size-h: var(--med-small);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=hmed] {
+  --image-adj-size-h: var(--medium);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=hm-tl] {
+  --image-adj-size-h: var(--med-tall);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=htall] {
+  --image-adj-size-h: var(--tall);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=hfull] {
+  --image-adj-size-h: 100%;
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=wmicro] {
+  --image-adj-size-w: var(--micro);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=wtiny] {
+  --image-adj-size-w: var(--tiny);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=wsmall] {
+  --image-adj-size-w: var(--small);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=ws-med] {
+  --image-adj-size-w: var(--small-med);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=wm-sm] {
+  --image-adj-size-w: var(--med-small);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=wmed] {
+  --image-adj-size-w: var(--medium);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=wm-tl] {
+  --image-adj-size-w: var(--med-tall);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=wtall] {
+  --image-adj-size-w: var(--tall);
+}
+:is(.view-content, .popover) img[alt][alt]:not([alt*=relative])[alt*=wfull] {
+  --image-adj-size-w: 100%;
+}
+
+.image-embed[alt][alt*=relative],
+div:not(.image-embed) > img[alt][alt*=relative] {
+  --micro: 10%;
+  --tiny: 20%;
+  --small: 30%;
+  --small-med: 40%;
+  --med-small: 50%;
+  --medium: 60%;
+  --med-tall: 70%;
+  --tall: 85%;
+}
+.image-embed[alt][alt*=relative][alt*=wmicro],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=wmicro] {
+  width: var(--micro);
+}
+.image-embed[alt][alt*=relative][alt*=wtiny],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=wtiny] {
+  width: var(--tiny);
+}
+.image-embed[alt][alt*=relative][alt*=wsmall],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=wsmall] {
+  width: var(--small);
+}
+.image-embed[alt][alt*=relative][alt*=ws-med],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=ws-med] {
+  width: var(--small-med);
+}
+.image-embed[alt][alt*=relative][alt*=wm-sm],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=wm-sm] {
+  width: var(--med-small);
+}
+.image-embed[alt][alt*=relative][alt*=wmed],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=wmed] {
+  width: var(--medium);
+}
+.image-embed[alt][alt*=relative][alt*=wm-tl],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=wm-tl] {
+  width: var(--med-tall);
+}
+.image-embed[alt][alt*=relative][alt*=wtall],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=wtall] {
+  width: var(--tall);
+}
+.image-embed[alt][alt*=relative][alt*=hmicro],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=hmicro] {
+  width: var(--micro);
+}
+.image-embed[alt][alt*=relative][alt*=htiny],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=htiny] {
+  width: var(--tiny);
+}
+.image-embed[alt][alt*=relative][alt*=hsmall],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=hsmall] {
+  width: var(--small);
+}
+.image-embed[alt][alt*=relative][alt*=hs-med],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=hs-med] {
+  width: var(--small-med);
+}
+.image-embed[alt][alt*=relative][alt*=hm-sm],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=hm-sm] {
+  width: var(--med-small);
+}
+.image-embed[alt][alt*=relative][alt*=hmed],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=hmed] {
+  width: var(--medium);
+}
+.image-embed[alt][alt*=relative][alt*=hm-tl],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=hm-tl] {
+  width: var(--med-tall);
+}
+.image-embed[alt][alt*=relative][alt*=htall],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=htall] {
+  width: var(--tall);
+}
+.image-embed[alt][alt*=relative][alt*=hfull],
+div:not(.image-embed) > img[alt][alt*=relative][alt*=hfull] {
+  width: 100%;
+}
+
+.image-embed[alt][alt*=relative],
+div:not(.image-embed) > img[alt][alt*=relative] {
+  display: block;
+  margin: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/*Image Locations*/
+/*Center Image*/
+img:is([alt~=img-ctr], [alt~=img-center]), img:is([alt~=ctr], [alt~=center]), .image-embed:is([alt~=img-ctr], [alt~=img-center]), .image-embed:is([alt~=ctr], [alt~=center]) {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Left & Right*/
+.markdown-rendered img:is([alt~=img-left], [alt~=img-locl]), .markdown-rendered img:is([alt~=left], [alt~=locl]), .markdown-rendered img:is([src*="#left"], [src*="#locl"]), .markdown-rendered .image-embed:is([alt~=img-left], [alt~=img-locl]), .markdown-rendered .image-embed:is([alt~=left], [alt~=locl]), .markdown-rendered .image-embed:is([src*="#left"], [src*="#locl"]) {
+  margin-top: 3px;
+  margin-bottom: 0px;
+  margin-right: 2%;
+  float: inline-start;
+}
+.markdown-rendered img:is([alt~=img-right], [alt~=img-locr]), .markdown-rendered img:is([alt~=right], [alt~=locr]), .markdown-rendered img:is([src*="#right"], [src*="#locr"]), .markdown-rendered .image-embed:is([alt~=img-right], [alt~=img-locr]), .markdown-rendered .image-embed:is([alt~=right], [alt~=locr]), .markdown-rendered .image-embed:is([src*="#right"], [src*="#locr"]) {
+  margin-left: 2%;
+  margin-bottom: 0px;
+  float: inline-end;
+}
+
+/*--Image Position--*/
+img[alt*="p+"], .image-embed[src*="#p+"] img {
+  --img-adj-object-fit: cover;
+  --img-adj-object-position: var(--img-adj-object-position-x) var(--img-adj-object-position-y);
+  --img-adj-object-position-x: 50%;
+  --img-adj-object-position-y: 50%;
+  object-fit: var(--img-adj-object-fit);
+  object-position: var(--img-adj-object-position);
+}
+
+/*Inner Image*/
+img[alt~="p+c"], .image-embed[src*="#p+c"] img {
+  --img-adj-object-position: center;
+}
+
+img[alt~="p+t"], .image-embed[src*="#p+t"] img {
+  --img-adj-object-position: top;
+}
+
+img[alt~="p+b"], .image-embed[src*="#p+b"] img {
+  --img-adj-object-position: bottom;
+}
+
+img[alt~="p+l"], .image-embed[src*="#p+l"] img {
+  --img-adj-object-position: left;
+}
+
+img[alt~="p+r"], .image-embed[src*="#p+r"] img {
+  --img-adj-object-position: right;
+}
+
+img[alt~="p+lc"], .image-embed[src*="#p+lc"] img {
+  --img-adj-object-position-x: 10%;
+}
+
+img[alt~="p+lcc"], .image-embed[src*="#p+lcc"] img {
+  --img-adj-object-position-x: 25%;
+}
+
+img[alt~="p+ccl"], .image-embed[src*="#p+ccl"] img {
+  --img-adj-object-position-x: 30%;
+}
+
+img[alt~="p+cl"], .image-embed[src*="#p+cl"] img {
+  --img-adj-object-position-x: 40%;
+}
+
+img[alt~="p+cr"], .image-embed[src*="#p+cr"] img {
+  --img-adj-object-position-x: 60%;
+}
+
+img[alt~="p+ccr"], .image-embed[src*="#p+ccr"] img {
+  --img-adj-object-position-x: 75%;
+}
+
+img[alt~="p+rcc"], .image-embed[src*="#p+rcc"] img {
+  --img-adj-object-position-x: 85%;
+}
+
+img[alt~="p+rc"], .image-embed[src*="#p+rc"] img {
+  --img-adj-object-position-x: 95%;
+}
+
+img[alt*="p+tc"], .image-embed[src*="#p+tc"] img {
+  --img-adj-object-position-y: 10%;
+}
+
+img[alt*="p+tcc"], .image-embed[src*="#p+tcc"] img {
+  --img-adj-object-position-y: 20%;
+}
+
+img[alt*="p+cct"], .image-embed[src*="#p+cct"] img {
+  --img-adj-object-position-y: 30%;
+}
+
+img[alt*="p+ct"], .image-embed[src*="#p+ct"] img {
+  --img-adj-object-position-y: 40%;
+}
+
+img[alt*="p+cb"], .image-embed[src*="#p+cb"] img {
+  --img-adj-object-position-y: 60%;
+}
+
+img[alt*="p+ccb"], .image-embed[src*="#p+ccb"] img {
+  --img-adj-object-position-y: 70%;
+}
+
+img[alt*="p+bc"], .image-embed[src*="#p+bc"] img {
+  --img-adj-object-position-y: 80%;
+}
+
+img[alt*="p+bcc"], .image-embed[src*="#p+bcc"] img {
+  --img-adj-object-position-y: 90%;
+}
+
+img[alt~="p+tr"] {
+  --img-adj-object-position-x: top;
+  --img-adj-object-position-y: right;
+}
+
+img[alt~="p+br"] {
+  --img-adj-object-position-x: bottom;
+  --img-adj-object-position-y: right;
+}
+
+img[alt~="p+tl"] {
+  --img-adj-object-position-x: top;
+  --img-adj-object-position-y: left;
+}
+
+img[alt~="p+bl"] {
+  --img-adj-object-position-x: bottom;
+  --img-adj-object-position-y: left;
+}
+
+/*Invert Colors*/
+.theme-dark img[alt*=invertb], .theme-dark .image-embed[src*="#invertb"] {
+  filter: invert(1) hue-rotate(180deg);
+}
+.theme-dark img[alt*=invertbc],
+.theme-dark .image-embed[src*="#invertbc"] {
+  filter: invert(1) hue-rotate(180deg) contrast(1.5);
+}
+
+.theme-light img[alt*=invertw], .theme-light .image-embed[src*="#invertw"] {
+  filter: invert(1) hue-rotate(180deg);
+}
+.theme-light img[alt*=invertwc], .theme-light .image-embed[src*="#invertwc"] {
+  filter: invert(1) hue-rotate(180deg) contrast(1.45);
+}
+
+img:is([alt*=flip-x],
+[alt*=flip-horizontal]) {
+  transform: scale(-1, 1);
+}
+img:is([alt*=flip-y],
+[alt*=flip-vertical]) {
+  transform: scale(1, -1);
+}
+img:is([alt*=flip-xy],
+[alt*=flip-vertical-horizontal]) {
+  transform: scale(-1, -1);
+}
+
+/*Fit image within bounds WITHOUT stretching*/
+img[alt*=cover],
+img:is([alt*=cover], [alt*=cvr]),
+.image-embed:is([src*="#cover"], [src*="#cvr"]),
+span.image-embed:is([src*="#cover"], [src*="#cvr"]) img {
+  object-fit: cover;
+}
+
+/*Fix Float Issues*/
+:is(img, .image-embed)[alt*=clear],
+.image-embed[src*="#clear"] {
+  clear: both;
+}
+
+img[alt*=unclr],
+.image-embed[src*="#unclr"] {
+  clear: none !important;
+}
+
+img:is([alt~=lp], [alt~=live-preview]):is([alt*=right], [alt*=locr]),
+.image-embed:is([alt~=lp], [alt~=live-preview]):is([alt*=right], [alt*=locr]) {
+  float: right !important;
+}
+img:is([alt~=lp], [alt~=live-preview]):is([alt*=left], [alt*=locl]),
+.image-embed:is([alt~=lp], [alt~=live-preview]):is([alt*=left], [alt*=locl]) {
+  float: left !important;
+}
+
+.clear-hr {
+  --hr-width: 100%;
+}
+
+.clear-headings :is(h1, h2, h3, h4, h5, h6),
+.clear-heading-1 h1,
+.clear-heading-2 h2,
+.clear-heading-3 h3,
+.clear-heading-4 h4,
+.clear-heading-5 h5,
+.clear-heading-6 h6 {
+  clear: both;
+}
+
+.markdown-rendered :is(img, .internal-embed)[alt][alt]:is([alt*=img-banner],
+[alt*=banner],
+[alt~=img-sban],
+[alt~=sban]) {
+  --img-adj-size-w: 100%;
+  --img-adj-display: block;
+  --img-adj-object-fit: cover;
+}
+
+/*Banners*/
+:is(img, .internal-embed)[alt][alt][alt*=banner] {
+  object-fit: var(--img-adj-object-fit);
+  width: var(--img-adj-size-w);
+  display: var(--img-adj-display);
+  height: var(--img-adj-size-h);
+}
+
+.markdown-rendered :is(img, .image-embed)[alt][alt]:is([alt~=img-banner], [alt~=banner]) {
+  --img-adj-size-h: var(--small);
+}
+.markdown-rendered :is(img, .image-embed)[alt][alt]:is([alt~="img-banner+small"], [alt~="banner+small"]) {
+  --img-adj-size-h: var(--tiny);
+}
+.markdown-rendered :is(img, .image-embed)[alt][alt]:is([alt~="img-banner+tall"], [alt~="banner+tall"]) {
+  --img-adj-size-h: var(--medium);
+}
+
+.internal-embed[src*="#img-sban"] img,
+:is(img, .internal-embed)[alt][alt]:is([alt~=img-sban], [alt~=sban]) {
+  object-fit: var(--img-adj-object-fit);
+  width: var(--img-adj-size-w);
+  display: var(--img-adj-display);
+}
+
+.markdown-rendered :is(img, image-embed):is([alt][alt][alt~=portrait],
+[alt][alt][alt*="portrait+"]) {
+  --img-adj-size-h: var(--med-small);
+  --img-adj-size-w: calc(var(--img-adj-size-h) / 1.7);
+  --img-adj-object-fit: cover;
+}
+
+/*Portait*/
+:is(img, image-embed):is([alt][alt][alt~=portrait],
+[alt][alt][alt*="portrait+"]) {
+  object-fit: var(--img-adj-object-fit);
+  height: var(--img-adj-size-h);
+  width: var(--img-adj-size-w);
+}
+
+.markdown-rendered :is(img, image-embed)[alt][alt][alt~="portrait+small"] {
+  --img-adj-size-h: var(--small-med);
+}
+.markdown-rendered :is(img, image-embed)[alt][alt][alt~="portrait+tall"] {
+  --img-adj-size-h: var(--medium);
+}
+
+.markdown-rendered :is(img, image-embed)[alt][alt][alt*=profile] {
+  --img-adj-size-w: var(--tiny);
+  --img-adj-size-h: var(--img-adj-size-w);
+  --img-adj-object-fit: cover;
+  --img-adj-aspect-ratio: 1 / 1;
+  --img-adj-border-radius: 50%;
+}
+
+/*Profile*/
+img[alt][alt][alt*=profile],
+.image-embed[alt][alt][alt*=profile] img {
+  object-fit: var(--img-adj-object-fit);
+  aspect-ratio: var(--img-adj-aspect-ratio);
+  height: var(--img-adj-size-h);
+  width: var(--img-adj-size-w);
+}
+img[alt][alt][alt*=profile]:not([alt~="profile+square"]),
+.image-embed[alt][alt][alt*=profile] img:not([alt~="profile+square"]) {
+  border-radius: var(--img-adj-border-radius);
+}
+
+.markdown-rendered :is(img, image-embed)[alt][alt][alt~="profile+small"] {
+  --img-adj-size-w: var(--micro);
+}
+.markdown-rendered :is(img, image-embed)[alt][alt][alt~="profile+medium"] {
+  --img-adj-size-w: var(--small);
+}
+.markdown-rendered :is(img, image-embed)[alt][alt][alt~="profile+tall"] {
+  --img-adj-size-w: var(--medium);
+}
+
+img[alt~=sprf] {
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+/*Image Shapes*/
+img[alt][alt*=circle] {
+  --img-adj-border-radius: 50%;
+  border-radius: var(--img-adj-border-radius);
+}
+
+img[alt~=square],
+.image-embed[alt~=square] img {
+  --img-adj-border-radius: 0;
+  border-radius: var(--img-adj-border-radius);
+}
+
+.markdown-rendered {
+  --image-adj-border-color: var(--background-modifier-border);
+  --image-adj-border-width: 1px;
+  --image-adj-border-padding: 8px;
+  --image-adj-border-background: var(--td, var(--background-primary-alt));
+}
+
+img[alt~=img-border],
+.internal-embed[alt~=img-border] img {
+  border: var(--image-adj-border-width) solid var(--image-adj-border-color);
+  padding: var(--image-adj-border-padding);
+  background: var(--image-adj-border-background);
+}
+
+.image-captions .image-embed::after,
+.image-embed[src*="#cap"]::after {
+  content: attr(alt);
+  color: var(--inactive, var(--faint-text));
+  display: block;
+  text-align: center;
+}
+
+.image-embed[src*="#cap"] {
+  display: inline-block;
+}
+.image-embed[src*="#cap"] img {
+  float: unset !important;
+  object-fit: cover;
+}
+.image-embed[src*="#cap"][src*="#hmicro"] img {
+  height: var(--micro);
+}
+.image-embed[src*="#cap"][src*="#htiny"] img {
+  height: var(--tiny);
+}
+.image-embed[src*="#cap"][src*="#hsmall"] img {
+  height: var(--small);
+}
+.image-embed[src*="#cap"][src*="#hs-med"] img {
+  height: var(--small-med);
+}
+.image-embed[src*="#cap"][src*="#hm-sm"] img {
+  height: var(--med-small);
+}
+.image-embed[src*="#cap"][src*="#hmed"] img {
+  height: var(--medium);
+}
+.image-embed[src*="#cap"][src*="#hm-tl"] img {
+  height: var(--med-tall);
+}
+.image-embed[src*="#cap"][src*="#htall"] img {
+  height: var(--tall);
+}
+.image-embed[src*="#cap"][src*="#hfull"] img {
+  height: 100%;
+}
+.image-embed[src*="#cap"][src*="#wmicro"], .image-embed[src*="#cap"][src*="#wmicro"] img {
+  width: var(--micro);
+}
+.image-embed[src*="#cap"][src*="#wtiny"], .image-embed[src*="#cap"][src*="#wtiny"] img {
+  width: var(--tiny);
+}
+.image-embed[src*="#cap"][src*="#wsmall"], .image-embed[src*="#cap"][src*="#wsmall"] img {
+  width: var(--small);
+}
+.image-embed[src*="#cap"][src*="#ws-med"], .image-embed[src*="#cap"][src*="#ws-med"] img {
+  width: var(--small-med);
+}
+.image-embed[src*="#cap"][src*="#wm-sm"], .image-embed[src*="#cap"][src*="#wm-sm"] img {
+  width: var(--med-small);
+}
+.image-embed[src*="#cap"][src*="#wmed"], .image-embed[src*="#cap"][src*="#wmed"] img {
+  width: var(--medium);
+}
+.image-embed[src*="#cap"][src*="#wm-tl"], .image-embed[src*="#cap"][src*="#wm-tl"] img {
+  width: var(--med-tall);
+}
+.image-embed[src*="#cap"][src*="#wtall"], .image-embed[src*="#cap"][src*="#wtall"] img {
+  width: var(--tall);
+}
+.image-embed[src*="#cap"][src*="#wfull"], .image-embed[src*="#cap"][src*="#wfull"] img {
+  width: 100%;
+}
+
+.mobile-image-viewer img[alt][alt][alt] {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.lightbox .media-wrapper img {
+  --img-adj-size-w: auto;
+  --img-adj-size-h: auto;
+  --img-adj-object-fit: contain;
+}
+
+/*@settings
+name: Image Adjustments
+id: image-adjustments
+settings:
+    - 
+        id: info-text-SlRvb-img-adj
+        type: info-text
+        title: Image Adjustments by SlRvb
+        description: "[Image Adjustments Snippet How-To Guide](https://publish.obsidian.md/slrvb-docs/ITS+Theme/Image+Adjustments)"
+        markdown: true
+    -
+        title: List Overlap Fix
+        description: Fix list bullets overlapping with images
+        id: img-adj-list
+        type: class-toggle
+        default: true
+    -
+        title: Clear Images
+        description: Push image under/over headings or horizontal lines
+        id: img-adj-clears
+        type: heading
+        level: 1
+        collapsed: true
+    -
+        title: Horizontal Lines
+        description: Push image under/over any horizontal lines
+        id: clear-hr
+        type: class-toggle
+    -
+        title: Headings
+        description: Push image under/over all headings 1-6
+        id: clear-headings
+        type: class-toggle
+    -
+        title: Heading Specific
+        description: Push image under/over some headings and not others
+        id: img-adj-clears-headings
+        type: heading
+        level: 2
+        collapsed: true
+    -
+        title: Header 1
+        id: clear-heading-1
+        type: class-toggle
+    -
+        title: Header 2
+        id: clear-heading-2
+        type: class-toggle
+    -
+        title: Header 3
+        id: clear-heading-3
+        type: class-toggle
+    -
+        title: Header 4
+        id: clear-heading-4
+        type: class-toggle
+    -
+        title: Header 5
+        id: clear-heading-5
+        type: class-toggle
+    -
+        title: Header 6
+        id: clear-heading-6
+        type: class-toggle
+*/
+/*Theme fixes*/
+.img-adj-list :is(ul, ol) {
+  display: flow-root;
+}
