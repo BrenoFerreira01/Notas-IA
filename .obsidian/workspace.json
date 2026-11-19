@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "c3ad89d393e9bb5a",
+        "id": "75e640df18ba24d1",
         "type": "tabs",
         "children": [
           {
-            "id": "306f200beafa964e",
+            "id": "9da4bb891676c1f9",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "3 - Full Notes/Atividade Final - DevOps na Prática.md",
-                "mode": "preview",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Atividade Final - DevOps na Prática"
+              "title": "Nova aba"
             }
           }
         ]
@@ -189,6 +185,7 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:Abrir a troca rápida": false,
       "graph:Abrir visualização em gráfico": false,
       "canvas:Criar novo canvas": false,
@@ -196,22 +193,39 @@
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
       "bases:Criar nova base": false,
-      "obsidian-git:Open Git source control": false,
       "obsidian-importer:Importar notas": false,
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "306f200beafa964e",
+  "active": "06c1697347137519",
   "lastOpenFiles": [
-    "3 - Full Notes/Snippets Commands.md",
+    "3 - Full Notes/Pesquisar certificados gratuitos.md",
+    "3 - Full Notes/3.1 imagens/Assistente inteligente para documentação técnica.png",
+    "2 - Indexes/Estudo.md",
+    "3 - Full Notes/Projetos para enriquecer meu portfólio de programação.md",
+    "3 - Full Notes/3.1 imagens/Dashboard de análise de dados públicos.png",
+    "3 - Full Notes/3.1 imagens/Automação de processos com Python.png",
+    "3 - Full Notes/3.1 imagens/Plataforma de aprendizado de inglês.png",
     "3 - Full Notes/Atividade Final - DevOps na Prática.md",
+    "3 - Full Notes/3.1 imagens/Plataforma de gerenciamento de tarefas (Trello simplificado).png",
+    "3 - Full Notes/3.1 imagens/Sistema de controle de estoque e vendas.png",
+    "3 - Full Notes/3.1 imagens/Sistema de gestão financeira pessoal.png",
+    "Pasted image 20261119094711.png",
+    "3 - Full Notes/3.1 imagens",
+    "2 - Indexes/DevOps.md",
+    "Snippets Commands.md",
+    "3 - Full Notes/Pesquisar.md",
+    "3 - Full Notes/3.5 - Planejamentos/planejamento_curso_cruzadinhas_matematicas.md",
+    "3 - Full Notes/3.5 - Planejamentos/backend-implementation-plan.md",
+    "3 - Full Notes/3.5 - Planejamentos/Nublue, funcionamento antigo e novo.md",
+    "3 - Full Notes/3.5 - Planejamentos/Nublue - Backlog.md",
+    "3 - Full Notes/3.5 - Planejamentos",
     "Sem título.md",
     "README.md",
     "SKILL.md",
     "4 - Temp Notes",
     "3 - Full Notes",
     "1 - Templates/Template para Notas Novas.md",
-    "2 - Indexes/DevOps.md",
     "Nova pasta",
     "2 - Indexes",
     "12-11-2026.md",
