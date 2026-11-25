@@ -1,9 +1,10 @@
 {
   "showRibbon": true,
   "theme": "obsidian",
-  "cssTheme": "",
+  "cssTheme": "Vanilla AMOLED",
   "enabledCssSnippets": [
     "S - Images Adjustments",
     "S - Checkboxes"
-  ]
+  ],
+  "accentColor": "#8a5cf5"
 }

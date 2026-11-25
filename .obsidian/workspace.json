@@ -11,10 +11,14 @@
             "id": "9da4bb891676c1f9",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "3 - Full Notes/Next.js - como criar o backend de um projeto.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Next.js - como criar o backend de um projeto"
             }
           }
         ]
@@ -197,23 +201,37 @@
       "omnisearch:Omnisearch": false
     }
   },
-  "active": "0069e0c8ce3a1c4a",
+  "active": "9da4bb891676c1f9",
   "lastOpenFiles": [
+    "3 - Full Notes/Atividade Final - DevOps na Prática.md",
+    "3 - Full Notes/Next.js - como criar o backend de um projeto.md",
+    "3 - Full Notes/Next.js - como criar o frontend de um projeto.md",
     "3 - Full Notes/Projetos para enriquecer meu portfólio de programação.md",
     "3 - Full Notes/Pesquisar certificados gratuitos.md",
+    "3 - Full Notes/sed5OajKV",
+    "3 - Full Notes/sedQQhNcO",
+    "3 - Full Notes/sedkVxmvM",
+    "2 - Indexes/Programação.md",
+    "3 - Full Notes/Next.js - como usar o básico.md",
+    "2 - Indexes/Estudo.md.tmp.8808.f8721ceab51f",
+    "3 - Full Notes/Next.js - como criar o frontend de um projeto.md.tmp.8808.86a1433b552c",
+    "Snippets Commands.md",
+    "3 - Full Notes/Next.js - como criar o backend de um projeto.md.tmp.8808.20ffbda2c485",
+    "3 - Full Notes/Next.js - como criar o frontend de um projeto.md.tmp.8808.49cd9c4bac84",
+    "3 - Full Notes/Next.js - como usar o básico.md.tmp.8808.0823d621d6db",
+    "SKILL.md",
+    "README.md",
     "3 - Full Notes/3.1 imagens/Assistente inteligente para documentação técnica.png",
     "2 - Indexes/Estudo.md",
     "3 - Full Notes/3.1 imagens/Dashboard de análise de dados públicos.png",
     "3 - Full Notes/3.1 imagens/Automação de processos com Python.png",
     "3 - Full Notes/3.1 imagens/Plataforma de aprendizado de inglês.png",
-    "3 - Full Notes/Atividade Final - DevOps na Prática.md",
     "3 - Full Notes/3.1 imagens/Plataforma de gerenciamento de tarefas (Trello simplificado).png",
     "3 - Full Notes/3.1 imagens/Sistema de controle de estoque e vendas.png",
     "3 - Full Notes/3.1 imagens/Sistema de gestão financeira pessoal.png",
     "Pasted image 20261119094711.png",
     "3 - Full Notes/3.1 imagens",
     "2 - Indexes/DevOps.md",
-    "Snippets Commands.md",
     "3 - Full Notes/Pesquisar.md",
     "3 - Full Notes/3.5 - Planejamentos/planejamento_curso_cruzadinhas_matematicas.md",
     "3 - Full Notes/3.5 - Planejamentos/backend-implementation-plan.md",
@@ -221,15 +239,8 @@
     "3 - Full Notes/3.5 - Planejamentos/Nublue - Backlog.md",
     "3 - Full Notes/3.5 - Planejamentos",
     "Sem título.md",
-    "README.md",
-    "SKILL.md",
-    "4 - Temp Notes",
-    "3 - Full Notes",
     "1 - Templates/Template para Notas Novas.md",
-    "Nova pasta",
-    "2 - Indexes",
     "12-11-2026.md",
-    "1 - Templates",
     "Bem-vindo.md"
   ]
 }

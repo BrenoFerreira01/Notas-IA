@@ -1,2 +1,5 @@
-* [[Pesquisar certificados gratuitos]]
-* [[Projetos para enriquecer meu portfólio de programação]]
+- [[Next.js - como criar o backend de um projeto]]
+- [[Next.js - como criar o frontend de um projeto]]
+- [[Next.js - como usar o básico]]
+- [[Pesquisar certificados gratuitos]]
+- [[Projetos para enriquecer meu portfólio de programação]]
