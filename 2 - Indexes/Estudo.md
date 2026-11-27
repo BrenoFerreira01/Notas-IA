@@ -1,3 +1,5 @@
+- [[ENADE - assuntos mais cobrados]]
+- [[ENADE - questionário de treino]]
 - [[Next.js - como criar o backend de um projeto]]
 - [[Next.js - como criar o frontend de um projeto]]
 - [[Next.js - como usar o básico]]
